@@ -79,7 +79,7 @@ const Reviews = () => {
       id: 8,
       name: 'Anthony L.',
       stars: '★★★★★',
-      date: 'I love this system. Told my brother to get one too.',
+      date: 'I love this system.',
       text: "”Just recommended it to my brother-in-law. I don't get to shoot as much as I would like. However, a few minutes with the system helps trigger control and sighting, improving speed and accuracy. I highly recommend it. Easy to set up and use just about anywhere!”",
       textClass: 'pl-2',
       image: '/contentimages/LSStes4.webp',
@@ -122,9 +122,11 @@ const Reviews = () => {
                       <span className="text-[#ffd700] text-xl">{review.stars}</span>
                     </div>
                   </div>
-                  <span className="font-bold text-black-600 text-lg mb-3 block">{review.date}</span>
+                  <span className="font-bold text-black-600 text-[15px] mb-3 block">
+                    {review.date}
+                  </span>
                 </div>
-                <div className={`text-black-600 text-sm block mt-2 ${review.textClass || ''}`}>
+                <div className={`text-[#555] text-sm block mt-2 ${review.textClass || ''}`}>
                   {review.text}
                 </div>
               </div>
@@ -159,9 +161,11 @@ const Reviews = () => {
                       <span className="text-[#ffd700] text-xl">{review.stars}</span>
                     </div>
                   </div>
-                  <span className="font-bold text-black-600 text-lg mb-3 block">{review.date}</span>
+                  <span className="font-bold text-black-600 text-[15px] mb-3 block">
+                    {review.date}
+                  </span>
                 </div>
-                <div className={`text-gray-800 text-sm block mt-2 ${review.textClass || ''}`}>
+                <div className={`text-[#555] text-sm block mt-2 ${review.textClass || ''}`}>
                   {review.text}
                 </div>
               </div>

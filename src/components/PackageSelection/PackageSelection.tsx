@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 
 const PackageSelection: React.FC = () => {
   const searchParams = useSearchParams();
-  
+
   // Get all current URL parameters
   const getCheckoutUrl = (baseUrl: string) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -30,7 +30,9 @@ const PackageSelection: React.FC = () => {
               <span className="text-5xl font-bold text-black">$99</span>
               <span className="text-[#ff0000] text-lg font-bold">+ S&H</span>
             </div>
-            <div className="text-black font-bold text-xl mb-2 text-center pt-2">You Saved $159</div>
+            <div className="text-black font-bold text-xl mb-2 text-center pt-2">
+              You Saved $159.00
+            </div>
             <div className="text-black text-center mb-4 text-xl">(Pick Your Caliber)</div>
             <div className="mb-1 -ml-6">
               <ul className="list-none p-0 m-0">
@@ -42,7 +44,7 @@ const PackageSelection: React.FC = () => {
             </div>
             <div className="mt-auto">
               <a
-                href={getCheckoutUrl("https://secure.vnsh.com/vnlsfhgbbtrngg/starter-checkout")}
+                href={getCheckoutUrl('https://secure.vnsh.com/vnlsfhgbbtrnhy/starter-checkout')}
                 target="_self"
                 rel="noopener noreferrer"
                 className="block w-full"
@@ -119,7 +121,7 @@ const PackageSelection: React.FC = () => {
 
             <div className="mt-auto">
               <a
-                href={getCheckoutUrl("https://secure.vnsh.com/vnlsfhgbbtrngg/advanced-checkout")}
+                href={getCheckoutUrl('https://secure.vnsh.com/vnlsfhgbbtrnhy/advanced-checkout')}
                 target="_self"
                 rel="noopener noreferrer"
                 className="block w-full"
@@ -191,7 +193,7 @@ const PackageSelection: React.FC = () => {
 
             <div className="mt-auto">
               <a
-                href={getCheckoutUrl("https://secure.vnsh.com/vnlsfhgbbtrngg/enhanced-checkout")}
+                href={getCheckoutUrl('https://secure.vnsh.com/vnlsfhgbbtrnhy/enhanced-checkout')}
                 target="_self"
                 rel="noopener noreferrer"
                 className="block w-full"

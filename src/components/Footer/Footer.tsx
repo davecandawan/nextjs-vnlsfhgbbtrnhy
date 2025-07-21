@@ -88,18 +88,20 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full mt-2 bg-[#242833] pb-10">
-      <div className="py-1 text-white bg-[#242833]">
-        <div className="text-center text-white py-2 text-[18px]">
+    <footer className="w-full mt-2 bg-[#242833] pb-12">
+      <div className="text-white bg-[#242833]">
+        <div className="text-center text-white text-[18px] -mb-1">
           © <b>2025 VNSH.com</b> All Rights Reserved.
         </div>
-        <FooterLinks loadInfo={loadInfo} />
+        <div className="-mt-[7px]">
+          <FooterLinks loadInfo={loadInfo} />
+        </div>
       </div>
 
       {showModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 p-4 pt-20" onClick={closeModal}>
           <div
-            className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto relative p-6 mx-auto"
+            className="bg-white rounded-lg max-w-6xl w-full max-h-[80vh] overflow-y-auto relative mx-auto"
             onClick={e => e.stopPropagation()}
           >
             <button

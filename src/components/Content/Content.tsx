@@ -80,18 +80,18 @@ const Content: React.FC = () => {
               </div>
               <div className="text-center sm:text-left min-w-[120px]">
                 <div className="font-bold">Don T.</div>
-                <div className="text-[13px] text-gray-600 mb-2">Verified Buyer</div>
+                <div className="text-[13px] text-[#555] mb-1">Verified Buyer</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-lg font-semibold mb-2">Top Review</div>
+                <div className="text-lg font-semibold mb-1 font-inter">Top Review</div>
 
                 <div className="text-yellow-400 text-xl">★★★★★</div>
 
-                <span className="font-semibold text-lg mb-2">
+                <span className="font-semibold text-lg mb-1 font-inter">
                   I've already saved $100s in ammo and range time!
                 </span>
 
-                <span className="text-[15px] text-gray-600 leading-tight block">
+                <span className="text-[14px] text-[#555] leading-tight block font-inter">
                   "It's a fantastic tool for improving trigger control. The setup is simple and
                   helps refine each shot. It's a cost-effective way to train without wasting ammo.
                   Highly recommended for anyone serious about honing their shooting skills!"

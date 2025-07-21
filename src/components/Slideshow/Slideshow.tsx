@@ -110,14 +110,14 @@ const Slideshow: React.FC = () => {
 
         <button
           onClick={prevSlide}
-          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-black p-1.5 sm:p-2 rounded-full shadow-md hover:shadow-lg transition-all backdrop-blur-sm"
+          className="text-xl sm:text-2xl absolute left-0 sm:left-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-[#000000CC] text-white p-2 sm:p-3 rounded-none transition-all backdrop-blur-sm"
           aria-label="Previous slide"
         >
           ❮
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-black p-1.5 sm:p-2 rounded-full shadow-md hover:shadow-lg transition-all backdrop-blur-sm"
+          className="text-xl sm:text-2xl absolute right-0 sm:right-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-[#000000CC] text-white p-2 sm:p-3 rounded-none transition-all backdrop-blur-sm"
           aria-label="Next slide"
         >
           ❯

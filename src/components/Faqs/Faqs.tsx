@@ -14,7 +14,7 @@ interface FaqData {
 
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="mb-2.5 overflow-hidden shadow-sm transition-all border-b border-[#656c80] pb-2">
+    <div className="mb-2.5 overflow-hidden shadow-sm transition-all border-b border-[#656c80] pb-3">
       <div
         className="flex justify-between items-center cursor-pointer"
         onClick={onClick}

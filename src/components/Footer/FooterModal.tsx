@@ -16,15 +16,15 @@ const FooterModal: React.FC<FooterModalProps> = ({ modalId, closeModal }) => {
         return (
           <>
             <div className="border-b border-gray-200 pb-4 mb-4">
-              <span className="text-2xl font-bold text-gray-800">Terms &amp; Disclaimer</span>
+              <span className="text-2xl font-bold text-black">Terms &amp; Disclaimer</span>
             </div>
             <div className="prose max-w-none text-base">
               <p className="font-semibold m-0 mb-2">Effective Date: January 1st, 2019</p>
-              <p className="mb-4 text-gray-700">
+              <p className="mb-4 text-black">
                 To review material modifications and their effective dates scroll to the bottom of
                 the page.
               </p>
-              <div className="text-gray-700">
+              <div className="text-black">
                 <ol className="list-decimal pl-5 space-y-3 m-0">
                   <li>
                     <span className="font-semibold">Parties.</span> The parties to these Terms of
@@ -453,9 +453,9 @@ const FooterModal: React.FC<FooterModalProps> = ({ modalId, closeModal }) => {
         return (
           <>
             <div className="border-b border-gray-200 pb-4 mb-4">
-              <span className="text-2xl font-bold text-gray-800">Privacy Policy</span>
+              <span className="text-2xl font-bold text-black">Privacy Policy</span>
             </div>
-            <div className="prose max-w-none space-y-4 text-gray-700">
+            <div className="prose max-w-none space-y-4 text-black">
               <p className="font-semibold">Effective Date: January 1st, 2019</p>
               <p>
                 To review material modifications and their effective dates scroll to the bottom of
@@ -688,9 +688,9 @@ const FooterModal: React.FC<FooterModalProps> = ({ modalId, closeModal }) => {
         return (
           <>
             <div className="border-b border-gray-200 pb-4 mb-4">
-              <span className="text-2xl font-bold text-gray-800">Shipping Policy</span>
+              <span className="text-2xl font-bold text-black">Shipping Policy</span>
             </div>
-            <div className="prose max-w-none space-y-4 text-gray-700">
+            <div className="prose max-w-none space-y-4 text-black">
               <p className="px-3">
                 Orders are shipped within 24 hours of placing your order Sunday through Thursday.
               </p>
@@ -712,9 +712,9 @@ const FooterModal: React.FC<FooterModalProps> = ({ modalId, closeModal }) => {
         return (
           <>
             <div className="border-b border-gray-200 pb-4 mb-4">
-              <span className="text-2xl font-bold text-gray-800">Returns Policy</span>
+              <span className="text-2xl font-bold text-black">Returns Policy</span>
             </div>
-            <div className="prose max-w-none space-y-4 text-gray-700">
+            <div className="prose max-w-none space-y-4 text-black">
               <p className="px-3">
                 If you would like to return your purchase for a refund, you must reach out to
                 customer support by either email or phone to receive a return merchandise

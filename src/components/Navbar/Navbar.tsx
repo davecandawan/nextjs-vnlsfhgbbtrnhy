@@ -27,21 +27,20 @@ const Navbar: React.FC = () => {
                 <span className="text-2xl">☰</span>
               </button>
 
-              {/* Dropdown Menu */}
               <div
                 className={`${isMenuOpen ? 'block' : 'hidden'} 
-                absolute left-0 top-full mt-0 w-48 bg-gray-800 rounded-b-md shadow-lg py-1 z-40`}
+  fixed left-0 top-20 right-0 w-screen sm:absolute sm:left-0 sm:right-auto sm:top-[calc(100%+0.2rem)] sm:w-48 bg-white rounded-b-sm shadow-lg py-2 z-40`}
               >
                 <Link
                   href="#benefits"
-                  className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-white text-base"
+                  className="block px-4 py-2 text-black hover:text-black bg-[#f9f9f9] text-base font-medium sm:bg-transparent sm:hover:bg-[#f9f9f9]"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Benefits
                 </Link>
                 <Link
                   href="#faqs"
-                  className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-white text-base"
+                  className="block px-4 py-2 text-black hover:bg-[#f9f9f9] hover:text-black text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   FAQs
