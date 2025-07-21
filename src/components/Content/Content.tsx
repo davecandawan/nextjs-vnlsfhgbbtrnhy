@@ -87,7 +87,7 @@ const Content: React.FC = () => {
 
                 <div className="text-yellow-400 text-xl">★★★★★</div>
 
-                <span className="font-semibold text-lg mb-1 font-inter">
+                <span className="font-semibold text-[16px] mb-3 block font-inter">
                   I've already saved $100s in ammo and range time!
                 </span>
 

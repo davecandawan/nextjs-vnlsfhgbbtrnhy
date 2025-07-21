@@ -125,12 +125,12 @@ const Slideshow: React.FC = () => {
       </div>
 
       {/* Thumbnails */}
-      <div className="flex justify-center space-x-3 sm:space-x-2 md:space-x-3 p-2 sm:p-2 w-full overflow-x-auto">
+      <div className="flex justify-center space-x-3 sm:space-x-2 md:space-x-3 p-2 w-full overflow-x-auto">
         {slides.map((slide, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`flex-shrink-0 w-8 h-6 sm:w-12 sm:h-9 md:w-16 md:h-12 overflow-hidden transition-all bg-transparent p-0 border-0 ${
+            className={`flex-shrink-0 w-8 h-6 sm:w-12 sm:h-9 md:w-14 md:h-10.5 overflow-visible transition-all bg-transparent p-0 border-0 ${
               currentSlide === index ? 'ring-1 ring-gray-300' : 'opacity-70 hover:opacity-100'
             }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -138,8 +138,9 @@ const Slideshow: React.FC = () => {
             <img
               src={slide.image}
               alt={`Thumbnail ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-none"
               loading="lazy"
+              style={{ borderRadius: 0 }}
             />
           </button>
         ))}

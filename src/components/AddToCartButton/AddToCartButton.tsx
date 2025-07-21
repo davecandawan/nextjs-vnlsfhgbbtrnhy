@@ -10,7 +10,7 @@ const AddToCartButton = () => {
       <div className="w-1/2 sm:w-[38%]">
         <Link
           href="#targetselection"
-          className="w-full block text-center bg-[#6bf557] hover:bg-[#49c735] hover:text-black text-black py-3 sm:py-5 px-3 sm:px-4 rounded-full text-2xl sm:text-4xl font-medium transition duration-300 ease-in-out transform hover:scale-105 font-jawbreak whitespace-nowrap"
+          className="w-full block text-center bg-[#6bf557] hover:text-black text-black py-3 sm:py-5 px-3 sm:px-4 rounded-full text-2xl sm:text-4xl font-medium font-jawbreak whitespace-nowrap"
         >
           ADD TO CART
         </Link>
