@@ -110,7 +110,7 @@ const Faqs: React.FC = () => {
 
   return (
     <div className="w-full bg-[#242833] py-5 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <div className="space-y-3">
           {faqData.map((item, index) => (
             <FaqItem

@@ -78,19 +78,19 @@ const Footer: React.FC = () => {
   const loadInfo = (id: string) => {
     setModalId(id);
     setShowModal(true);
-    document.body.style.overflow = 'hidden';
+    // Removed the line that hides the scrollbar
   };
 
   const closeModal = () => {
     setShowModal(false);
     setModalId('');
-    document.body.style.overflow = 'auto';
+    // Removed the line that restores the scrollbar
   };
 
   return (
     <footer className="w-full mt-2 bg-[#242833] pb-12">
       <div className="text-white bg-[#242833]">
-        <div className="text-center text-white text-[18px] -mb-1">
+        <div className="text-center text-white text-[18px] mb-2 md:-mb-1">
           © <b>2025 VNSH.com</b> All Rights Reserved.
         </div>
         <div className="-mt-[7px]">
@@ -98,23 +98,32 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 p-4 pt-20" onClick={closeModal}>
-          <div
-            className="bg-white rounded-lg max-w-6xl w-full max-h-[80vh] overflow-y-auto relative mx-auto"
-            onClick={e => e.stopPropagation()}
+      <div
+        className={`fixed inset-0 bg-black/70 flex items-start justify-center z-50 pt-10 px-4 overflow-y-auto transition-opacity duration-300 ease-in-out ${!showModal ? 'pointer-events-none' : ''}`}
+        onClick={closeModal}
+        style={{
+          opacity: showModal ? 1 : 0,
+          transition: 'opacity 300ms ease-in-out',
+        }}
+      >
+        <div
+          className={`bg-white rounded-lg max-w-6xl w-full max-h-[80vh] overflow-y-auto relative mx-auto transition-all duration-300 ease-in-out transform shadow-2xl ${showModal ? 'translate-y-0' : '-translate-y-10'}`}
+          onClick={e => e.stopPropagation()}
+          style={{
+            transition: 'transform 300ms ease-in-out, opacity 300ms ease-in-out',
+            opacity: showModal ? 1 : 0,
+          }}
+        >
+          <button
+            className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-gray-800 bg-transparent border-none hover:bg-transparent"
+            onClick={closeModal}
+            aria-label="Close modal"
           >
-            <button
-              className="absolute top-4 right-4 text-2xl text-gray-500 hover:text-gray-800 bg-transparent border-none hover:bg-transparent"
-              onClick={closeModal}
-              aria-label="Close modal"
-            >
-              &times;
-            </button>
-            <FooterModal modalId={modalId} closeModal={closeModal} />
-          </div>
+            &times;
+          </button>
+          <FooterModal modalId={modalId} closeModal={closeModal} />
         </div>
-      )}
+      </div>
     </footer>
   );
 };
