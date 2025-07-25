@@ -68,14 +68,14 @@ const Navbar: React.FC = () => {
           <div className="flex items-center justify-end w-[20%] sm:pr-0">
             <div className="w-10 h-10 flex items-center justify-center">
               <Image
-                src="https://cdn.shopify.com/s/files/1/0670/4948/8684/files/565375.png?v=1746039467"
+                src="/contentimages/cartmobile.webp"
                 alt="Shopping Cart"
-                width={24}
-                height={24}
+                width={35}
+                height={35}
                 className="w-6 h-6 object-contain"
                 style={{
-                  minWidth: '24px',
-                  minHeight: '24px',
+                  minWidth: '35px',
+                  minHeight: '35px',
                 }}
               />
             </div>
