@@ -84,11 +84,11 @@ const PackageSelection: React.FC = () => {
               src="/contentimages/AdvancedMobileU2.webp"
               alt="Ultimate Package"
               fill
-              className="object-contain -mt-[15px] md:-mt-[15px]"
+              className="object-contain object-top"
               priority
             />
           </div>
-          <div className="p-4 flex-grow flex flex-col bg-[#ededed]">
+          <div className="pt-0 px-4 pb-4 flex-grow flex flex-col bg-[#ededed]">
             <div className="flex justify-center items-center gap-2">
               <span className="text-5xl font-bold text-black">$199</span>
               <span className="text-[#ff0000] text-lg font-bold">+ Free S&H</span>
@@ -100,7 +100,7 @@ const PackageSelection: React.FC = () => {
               <ul className="list-none p-0 m-0">
                 <li className="flex items-start bg-black text-white px-3 py-0.5 rounded mb-2">
                   <span className="text-white mr-2 text-base">+</span>
-                  <span className="text-base">
+                  <span className="text-[15px]">
                     All Calibers <span className="text-sm">(9mm, .380, .40 & .45)</span>
                   </span>
                 </li>
@@ -161,7 +161,7 @@ const PackageSelection: React.FC = () => {
               src="/contentimages/EnhancedMobileU2.webp"
               alt="Enhanced Package"
               fill
-              className="object-contain -mt-4 md:-mt-4"
+              className="object-contain object-top"
               priority
             />
           </div>
